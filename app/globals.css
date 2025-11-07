@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0A0A0A;
+  color: white;
+  overflow-x: hidden;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #00D9FF 0%, #4169E1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glass-card {
+  background: rgba(26, 26, 26, 0.6);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 217, 255, 0.2);
+  border-radius: 16px;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  border-color: rgba(0, 217, 255, 0.5);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(0, 217, 255, 0.15);
+}
+
+.glow-effect {
+  box-shadow: 0 0 40px rgba(0, 217, 255, 0.3);
+}
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.1), rgba(65, 105, 225, 0.1));
+  border-radius: 16px;
+  padding: 2px;
+}
+
+.gradient-border-inner {
+  background: #1A1A1A;
+  border-radius: 14px;
+  padding: 2rem;
+}
+
+.section-padding {
+  padding: 100px 20px;
+}
+
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 60px 20px;
+  }
+}
